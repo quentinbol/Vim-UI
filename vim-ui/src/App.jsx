@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Avatar from './stories/Avatar'
-import Card from './stories/Card'
+import Avatar from './components/Avatar'
+import Card from './components/Card'
+import Typography from './components/Typography'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="">
+    <div className="p-5">
       <Card children="Salut" size="xxl">
-        <p></p>
-        <Avatar src="https://picsum.photos/id/1033/400/400" size="lg" />
+        <div className='flex items-center gap-5'>
+          <Avatar src="https://picsum.photos/id/1033/400/400" size="lg" />
+          <Typography type="h2" size='xl' weight='bold' color='secondary'>Hello World</Typography>
+        </div>
       </Card>
     </div>
   )
